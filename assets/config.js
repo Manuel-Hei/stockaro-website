@@ -31,8 +31,11 @@ const SITE_CONFIG = {
       highlight: false,
       features: [
         "bis 200 aktive SKUs",
-        "Automatische Abbuchung",
-        "Mobiler Scanner",
+        "Automatische Abbuchung bei Shopify-Zahlung",
+        "Mobiler Scanner (Eingang, Retoure, Verlust)",
+        "Eingang/Ausgang Chart mit Vorwoche-Vergleich",
+        "5 KPI-Karten mit Vorperioden-Delta",
+        "Top 10 meistbewegte Artikel",
         "E-Mail-Alert bei Unterbestand",
       ],
     },
@@ -43,9 +46,11 @@ const SITE_CONFIG = {
       features: [
         "bis 2.000 aktive SKUs",
         "Alles aus Basic",
-        "Pickliste & Lieferschein",
-        "Statistiken & Charts",
+        "Pickliste & Lieferschein-Druck",
         "Produktfreigabe-Workflow",
+        "Buchungen nach Quelle (Donut-Chart)",
+        "Aktivität nach Wochentag",
+        "Pareto 80/20 — welche SKUs treiben 80% der Bewegungen?",
       ],
     },
     {
@@ -55,6 +60,8 @@ const SITE_CONFIG = {
       features: [
         "Unbegrenzte SKUs",
         "Alles aus Standard",
+        "Bestandsverlauf pro SKU über Zeit",
+        "Lagerumschlag-Rate (Schnell- vs. Langsamdreher)",
         "Multi-Standort",
         "API-Zugang",
         "Prioritäts-Support",

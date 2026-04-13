@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lagerverwaltung für Shopify-Händler — automatisch abbuchen, mobil scannen, Unterbestand erkennen.">
+  <meta name="description" content="Die einfache Stocky-Alternative für Shopify-Händler im DACH-Raum — automatisch abbuchen, mobil scannen, Unterbestand erkennen. Kein WMS-Fachwissen nötig, Einrichtung in 2 Minuten.">
   <meta name="author" data-config="vendorName">
   <title data-config="appName">Stockaro</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +12,48 @@
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/config.js"></script>
   <style>
+    /* ── Urgency Bar ──────────────────────────────────────────────── */
+    .urgency-bar {
+      background: var(--forest);
+      color: var(--cream);
+      padding: 10px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 13px;
+      line-height: 1.4;
+      position: relative;
+    }
+    .urgency-bar strong { font-weight: 600; }
+    .urgency-bar-cta {
+      color: var(--sage);
+      font-weight: 500;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(116,165,127,.5);
+      white-space: nowrap;
+      transition: border-color .2s;
+    }
+    .urgency-bar-cta:hover { border-color: var(--sage); }
+    .urgency-bar-dismiss {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: rgba(255,255,255,.35);
+      cursor: pointer;
+      font-size: 20px;
+      line-height: 1;
+      padding: 4px 6px;
+      transition: color .2s;
+    }
+    .urgency-bar-dismiss:hover { color: rgba(255,255,255,.7); }
+    @media (max-width: 768px) {
+      .urgency-bar { padding: 10px 40px 10px 16px; font-size: 12px; flex-wrap: wrap; gap: 6px; }
+    }
+
     /* ── Hero ─────────────────────────────────────────────────────── */
     .hero {
       display: grid;
@@ -121,6 +163,13 @@
 </head>
 <body>
 
+<!-- ── Urgency Bar ──────────────────────────────────────────────────────────── -->
+<div class="urgency-bar" id="urgency-bar">
+  <span><strong>Stocky wird am 31. August 2026 eingestellt.</strong> Jetzt reibungslos zur Alternative wechseln —</span>
+  <a href="#" class="urgency-bar-cta" data-config-cta>14 Tage kostenlos testen</a>
+  <button class="urgency-bar-dismiss" id="urgency-bar-dismiss" aria-label="Schließen">&#215;</button>
+</div>
+
 <!-- ── Navigation ─────────────────────────────────────────────────────────── -->
 <nav class="site-nav">
   <a href="/" class="nav-logo">
@@ -152,7 +201,7 @@
   <div class="hero-left">
     <div class="hero-badge animate-in delay-1">
       <span class="hero-badge-dot"></span>
-      Shopify WMS · DACH<span id="hero-badge-price"> · ab 10 €/Monat</span>
+      Stocky-Alternative · DACH<span id="hero-badge-price"> · ab 10 €/Monat</span>
     </div>
     <h1 class="hero-headline animate-in delay-2">
       Dein Lager,<br>
@@ -160,9 +209,9 @@
       im Griff.
     </h1>
     <p class="hero-sub animate-in delay-3">
-      Die Lagerverwaltung für Shopify-Händler, die einfach funktioniert —
+      Die einfachste Shopify-Lagerverwaltung für DACH-Händler —
       automatische Abbuchungen, mobiler Scanner, Unterbestand-Alerts.
-      Ohne Vorkenntnisse, ohne Einrichtungsaufwand.
+      Kein WMS-Fachwissen nötig. Einrichtung in unter 2 Minuten.
     </p>
     <div class="hero-actions animate-in delay-4">
       <a href="#" class="btn-primary" data-config-cta>
@@ -478,6 +527,20 @@
           '</ul>' +
           '<button class="plan-btn" onclick="location.href=\'' + ctaUrl + '\'">' + ctaText + '</button>';
         grid.appendChild(card);
+      });
+    }
+  }
+
+  // ── Urgency bar dismiss ─────────────────────────────────────────────────
+  var urgencyBar     = document.getElementById('urgency-bar');
+  var urgencyDismiss = document.getElementById('urgency-bar-dismiss');
+  if (urgencyBar) {
+    if (localStorage.getItem('urgency-dismissed')) {
+      urgencyBar.style.display = 'none';
+    } else if (urgencyDismiss) {
+      urgencyDismiss.addEventListener('click', function () {
+        urgencyBar.style.display = 'none';
+        localStorage.setItem('urgency-dismissed', '1');
       });
     }
   }
