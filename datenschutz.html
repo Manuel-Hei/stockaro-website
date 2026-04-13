@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutz — Stockaro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/config.js"></script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="/" class="nav-logo">
+    <div class="nav-logo-mark">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+        <rect x="2" y="5" width="14" height="9" rx="2" stroke="#faf7f0" stroke-width="1.5"/>
+        <path d="M6 5V4a3 3 0 016 0v1" stroke="#faf7f0" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M6 9h6M9 9v3" stroke="#74a57f" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <span class="nav-logo-name" data-config="appName">Stockaro</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html#features">Features</a></li>
+    <li class="nav-pricing-link"><a href="index.html#preise">Preise</a></li>
+    <li><a href="impressum.html">Impressum</a></li>
+    <li><a href="index.html" class="nav-cta" data-config-cta>Frühzugang anfragen</a></li>
+  </ul>
+</nav>
+
+<div class="legal-wrap">
+  <h1>Datenschutzerklärung</h1>
+
+  <p>
+    <strong>Verantwortlicher:</strong><br>
+    Nadine Pollmüller / HUNDSDING<br>
+    Im Mühlengarten 12a, 33428 Harsewinkel<br>
+    E-Mail: <a href="mailto:info@hundsding.de">info@hundsding.de</a>
+  </p>
+  <p><strong>Stand:</strong> 2026-03</p>
+
+  <hr>
+
+  <h2>1. Überblick und Rollenmodell</h2>
+  <h3>1.1 Wer ist wofür verantwortlich?</h3>
+  <p>Stockaro ist eine Shopify-App für Händler (B2B). Im Betrieb gibt es zwei datenschutzrechtliche Rollen:</p>
+  <p><strong>HUNDSDING als Auftragsverarbeiter (Art. 28 DSGVO):</strong> Für alle Daten, die im Rahmen der WMS-Funktionen verarbeitet werden (Bestelldaten, Produktdaten, Lagerdaten), handeln wir im Auftrag des jeweiligen Händlers. Der Händler ist Verantwortlicher für die Daten seiner Kunden und seines Betriebs.</p>
+  <p><strong>HUNDSDING als Verantwortlicher:</strong> Für Support-Kommunikation und Account-Verwaltung sind wir selbst Verantwortlicher.</p>
+  <p>Für Anfragen zu Endkundendaten (Käufer im Shopify-Shop des Händlers) sind die jeweiligen Händler zuständig.</p>
+
+  <h3>1.2 Auftragsverarbeitungsvertrag (AVV)</h3>
+  <p>Mit jedem Händler, der die App nutzt, besteht ein Auftragsverarbeitungsvertrag gemäß Art. 28 DSGVO. Dieser ist auf Anfrage per E-Mail erhältlich. <!-- TODO: Link auf finale Stockaro-Domain aktualisieren sobald stockaro.de/avv verfügbar ist --></p>
+
+  <h2>2. Welche Daten werden verarbeitet?</h2>
+  <h3>2.1 Shop-Daten (vom Händler)</h3>
+  <p>Shopify-Domain, Shopify-Access-Token (für API-Zugriff, verschlüsselt gespeichert), Abo-Status.</p>
+
+  <h3>2.2 Bestelldaten (aus Shopify-Webhooks)</h3>
+  <p>Bestellnummer, Kundenname (Vor-/Nachname — keine vollständige Adresse, keine E-Mail, keine Telefonnummer), Bestellpositionen (SKU, Produkttitel, Menge), Bestellstatus.</p>
+
+  <h3>2.3 Produkt- und Bestandsdaten</h3>
+  <p>Produkttitel, Varianten, SKUs, Lagermengen, Lagerorte — ausschließlich operativer Betrieb des WMS.</p>
+
+  <h2>3. Rechtsgrundlagen</h2>
+  <p>Die Verarbeitung erfolgt auf Basis von Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) und Art. 28 DSGVO (Auftragsverarbeitung).</p>
+
+  <h2>4. Speicherdauer</h2>
+  <p>Daten werden gelöscht, sobald der Zweck entfällt oder der Händler die App deinstalliert. Nach Deinstallation: automatische Löschung nach 30 Tagen gemäß Shopify-Mandatory-Webhook.</p>
+
+  <h2>5. Betroffenenrechte</h2>
+  <p>Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch, Datenübertragbarkeit — schriftlich an <a href="mailto:info@hundsding.de">info@hundsding.de</a>. Beschwerderecht bei der zuständigen Aufsichtsbehörde.</p>
+
+  <h2>6. Hosting</h2>
+  <p>Die App wird auf Railway (Railway Corp., USA) gehostet. Standardvertragsklauseln gemäß Art. 46 Abs. 2 lit. c DSGVO sind vereinbart. Die gewählte Railway-Region wird im Betrieb dokumentiert.</p>
+
+  <h2>7. Cookies und Tracking</h2>
+  <p>Diese Website (stockaro.de) verwendet keine Tracking-Cookies, keine Analytics und kein Remarketing. Es wird ausschließlich ein Session-Cookie für die App-Authentifizierung gesetzt, wenn der Händler eingeloggt ist.</p>
+</div>
+
+<footer class="site-footer">
+  <p class="footer-copy">
+    © <span data-config="year"></span> <span data-config="vendorName">ManuFacturing Labs</span>
+  </p>
+  <ul class="footer-links">
+    <li><a href="impressum.html">Impressum</a></li>
+    <li><a href="datenschutz.html">Datenschutz</a></li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var cfg = SITE_CONFIG;
+  // <meta> tags require setAttribute('content') — all others use textContent
+  document.querySelectorAll('[data-config]').forEach(function (el) {
+    var key = el.getAttribute('data-config');
+    if (cfg[key] === undefined) return;
+    if (el.tagName === 'META') { el.setAttribute('content', cfg[key]); }
+    else { el.textContent = cfg[key]; }
+  });
+  document.title = document.title.replace('Stockaro', cfg.appName);
+  var ctaText = cfg.ctaLabel[cfg.launchStatus];
+  var ctaUrl  = cfg.ctaUrl[cfg.launchStatus];
+  document.querySelectorAll('[data-config-cta]').forEach(function (el) {
+    el.href = ctaUrl; el.textContent = ctaText;
+  });
+  if (!cfg.showPricing) {
+    var navPricingLink = document.querySelector('.nav-pricing-link');
+    if (navPricingLink) navPricingLink.style.display = 'none';
+  }
+})();
+</script>
+
+</body>
+</html>
