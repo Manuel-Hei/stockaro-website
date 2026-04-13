@@ -58,12 +58,10 @@ const SITE_CONFIG = {
       price:     "79",
       highlight: false,
       features: [
-        "Unbegrenzte SKUs",
         "Alles aus Standard",
         "Bestandsverlauf pro SKU über Zeit",
         "Lagerumschlag-Rate (Schnell- vs. Langsamdreher)",
         "Multi-Standort",
-        "API-Zugang",
         "Prioritäts-Support",
       ],
     },
