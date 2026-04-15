@@ -16,7 +16,7 @@ const SITE_CONFIG = {
     live:     "Kostenlos installieren",
   },
   ctaUrl: {
-    waitlist: "mailto:hello@stockaro.de",
+    waitlist: "mailto:info@stockaro.de",
     beta:     "https://apps.shopify.com/stockaro",
     live:     "https://apps.shopify.com/stockaro",
   },
