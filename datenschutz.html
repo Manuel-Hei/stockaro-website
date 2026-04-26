@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/config.js"></script>
+  <script src="assets/vendor.js" defer></script>
 </head>
 <body>
 
@@ -36,19 +37,19 @@
 
   <p>
     <strong>Verantwortlicher:</strong><br>
-    Nadine Pollmüller / HUNDSDING<br>
-    Im Mühlengarten 12a, 33428 Harsewinkel<br>
-    E-Mail: <a href="mailto:info@stockaro.de">info@stockaro.de</a>
+    <span data-vendor="legalName"></span><br>
+    <span data-vendor="addressBlock"></span><br>
+    E-Mail: <a data-vendor-href="email" href="#"><span data-vendor="email"></span></a>
   </p>
-  <p><strong>Stand:</strong> 2026-03</p>
+  <p><strong>Stand:</strong> 2026-04</p>
 
   <hr>
 
   <h2>1. Überblick und Rollenmodell</h2>
   <h3>1.1 Wer ist wofür verantwortlich?</h3>
   <p>Stockaro ist eine Shopify-App für Händler (B2B). Im Betrieb gibt es zwei datenschutzrechtliche Rollen:</p>
-  <p><strong>HUNDSDING als Auftragsverarbeiter (Art. 28 DSGVO):</strong> Für alle Daten, die im Rahmen der WMS-Funktionen verarbeitet werden (Bestelldaten, Produktdaten, Lagerdaten), handeln wir im Auftrag des jeweiligen Händlers. Der Händler ist Verantwortlicher für die Daten seiner Kunden und seines Betriebs.</p>
-  <p><strong>HUNDSDING als Verantwortlicher:</strong> Für Support-Kommunikation und Account-Verwaltung sind wir selbst Verantwortlicher.</p>
+  <p><strong>Der Anbieter als Auftragsverarbeiter (Art. 28 DSGVO):</strong> Für alle Daten, die im Rahmen der WMS-Funktionen verarbeitet werden (Bestelldaten, Produktdaten, Lagerdaten), handelt der Anbieter im Auftrag des jeweiligen Händlers. Der Händler ist Verantwortlicher für die Daten seiner Kunden und seines Betriebs.</p>
+  <p><strong>Der Anbieter als Verantwortlicher:</strong> Für Support-Kommunikation und Account-Verwaltung ist der Anbieter selbst Verantwortlicher.</p>
   <p>Für Anfragen zu Endkundendaten (Käufer im Shopify-Shop des Händlers) sind die jeweiligen Händler zuständig.</p>
 
   <h3>1.2 Auftragsverarbeitungsvertrag (AVV)</h3>
@@ -59,7 +60,9 @@
   <p>Shopify-Domain, Shopify-Access-Token (für API-Zugriff, verschlüsselt gespeichert), Abo-Status.</p>
 
   <h3>2.2 Bestelldaten (aus Shopify-Webhooks)</h3>
-  <p>Bestellnummer, Kundenname (Vor-/Nachname — keine vollständige Adresse, keine E-Mail, keine Telefonnummer), Bestellpositionen (SKU, Produkttitel, Menge), Bestellstatus.</p>
+  <p>Bestellnummer, Kundenname (Vor-/Nachname), Lieferadresse (Adresszeile 1+2, PLZ, Ort, Land, optional Firma) — ausschließlich für den Lieferschein, Bestellpositionen (SKU, Produkttitel, Menge), Bestellstatus, optionale Bestell-Notiz.</p>
+  <p><strong>Zweck der Endkundendaten:</strong> Name für Pickliste/Pack-Workflow, Lieferadresse ausschließlich für den Lieferschein.</p>
+  <p><strong>Nicht gespeichert:</strong> E-Mail-Adressen, Telefonnummern von Endkunden, Rechnungsadressen, Zahlungs- bzw. Payment-Daten, Kreditkarteninformationen.</p>
 
   <h3>2.3 Produkt- und Bestandsdaten</h3>
   <p>Produkttitel, Varianten, SKUs, Lagermengen, Lagerorte — ausschließlich operativer Betrieb des WMS.</p>
@@ -71,7 +74,7 @@
   <p>Daten werden gelöscht, sobald der Zweck entfällt oder der Händler die App deinstalliert. Nach Deinstallation: automatische Löschung nach 30 Tagen gemäß Shopify-Mandatory-Webhook.</p>
 
   <h2>5. Betroffenenrechte</h2>
-  <p>Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch, Datenübertragbarkeit — schriftlich an <a href="mailto:info@stockaro.de">info@stockaro.de</a>. Beschwerderecht bei der zuständigen Aufsichtsbehörde.</p>
+  <p>Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch, Datenübertragbarkeit — schriftlich an <a data-vendor-href="email" href="#"><span data-vendor="email"></span></a>. Beschwerderecht bei der zuständigen Aufsichtsbehörde.</p>
 
   <h2>6. Hosting</h2>
   <p>Die App wird auf Railway (Railway Corp., USA) gehostet. Standardvertragsklauseln gemäß Art. 46 Abs. 2 lit. c DSGVO sind vereinbart. Die gewählte Railway-Region wird im Betrieb dokumentiert.</p>

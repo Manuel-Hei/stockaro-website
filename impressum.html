@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/config.js"></script>
+  <script src="assets/vendor.js" defer></script>
 </head>
 <body>
 
@@ -37,25 +38,23 @@
 
   <h2>Anbieter</h2>
   <p>
-    Nadine Pollmüller<br>
-    Im Mühlengarten 12a<br>
-    33428 Harsewinkel<br>
-    Deutschland
+    <span data-vendor="legalName"></span><br>
+    <span data-vendor="addressBlock"></span>
   </p>
 
   <h2>Kontakt</h2>
   <p>
-    E-Mail: <a href="mailto:info@stockaro.de">info@stockaro.de</a><br>
-    Telefon: auf Anfrage per E-Mail
+    E-Mail: <a data-vendor-href="email" href="#"><span data-vendor="email"></span></a><br>
+    Telefon: <span data-vendor="phone"></span>
   </p>
 
   <h2>Vertretungsberechtigte Person</h2>
-  <p>Nadine Pollmüller</p>
+  <p><span data-vendor="representative"></span></p>
 
   <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
   <p>
-    Nadine Pollmüller<br>
-    Im Mühlengarten 12a, 33428 Harsewinkel
+    <span data-vendor="representative"></span><br>
+    Anschrift wie oben
   </p>
 
   <hr>

@@ -6,6 +6,27 @@ const SITE_CONFIG = {
   appName:    "Stockaro",
   vendorName: "ManuFacturing Labs",
 
+  // ── LEGAL VENDOR (Anbieter im Sinne § 5 DDG / DSGVO) ─────────────────────
+  // Diese Datei ist die EINZIGE Quelle der Anbieter-Identitaet auf der
+  // statischen Website. Aenderungen hier wirken automatisch in
+  // impressum.html und datenschutz.html ueber data-vendor="*"-Hooks.
+  // Niemals Adresse oder E-Mail in einzelnen HTML-Dateien hardcoden.
+  vendor: {
+    legalName:      "Manuel Heithus",
+    legalForm:      "private",            // private | einzelunternehmer | ug
+    addressLine1:   "Im Mühlengarten 12a",
+    addressLine2:   "",
+    zip:            "33428",
+    city:           "Harsewinkel",
+    country:        "Deutschland",
+    email:          "info@stockaro.de",
+    phone:          "auf Anfrage per E-Mail",
+    representative: "Manuel Heithus",
+    vatId:          "",
+    hrb:            "",
+    taxRemark:      "",
+  },
+
   // ── CTA ──────────────────────────────────────────────────────────────────
   // Set launchStatus to control CTA text + URL across all pages.
   // "waitlist" | "beta" | "live"
