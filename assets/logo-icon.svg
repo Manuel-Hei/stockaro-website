@@ -1,0 +1,23 @@
+<svg width="1200" height="1200" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="88" height="88" rx="20" fill="#0F6E56"></rect>
+  <text x="44" y="38" text-anchor="middle" font-size="20" font-weight="700" font-family="system-ui, -apple-system, sans-serif">
+    <tspan fill="white">S</tspan><tspan fill="white" opacity="0.52">tock</tspan>
+  </text>
+  <rect x="12" y="43" width="64" height="1" rx="0.5" fill="white" opacity="0.15"></rect>
+  <text x="44" y="54" text-anchor="middle" font-size="9.5" font-weight="400" fill="white" opacity="0.35" font-family="system-ui, -apple-system, sans-serif" letter-spacing="5">aro</text>
+  <rect x="16" y="60" width="2" height="16" rx="0.5" fill="white" opacity="0.7"></rect>
+  <rect x="20" y="60" width="1" height="16" rx="0.5" fill="white" opacity="0.7"></rect>
+  <rect x="23" y="60" width="3" height="16" rx="0.5" fill="white" opacity="0.7"></rect>
+  <rect x="28" y="60" width="1" height="16" rx="0.5" fill="white" opacity="0.7"></rect>
+  <rect x="31" y="60" width="2" height="16" rx="0.5" fill="white" opacity="0.7"></rect>
+  <rect x="35" y="60" width="1" height="16" rx="0.5" fill="white" opacity="0.7"></rect>
+  <rect x="38" y="60" width="3" height="16" rx="0.5" fill="white" opacity="0.7"></rect>
+  <rect x="43" y="60" width="1" height="16" rx="0.5" fill="white" opacity="0.7"></rect>
+  <rect x="46" y="60" width="2" height="16" rx="0.5" fill="white" opacity="0.7"></rect>
+  <rect x="50" y="60" width="1" height="16" rx="0.5" fill="white" opacity="0.7"></rect>
+  <rect x="53" y="60" width="3" height="16" rx="0.5" fill="white" opacity="0.7"></rect>
+  <rect x="58" y="60" width="1" height="16" rx="0.5" fill="white" opacity="0.7"></rect>
+  <rect x="61" y="60" width="2" height="16" rx="0.5" fill="white" opacity="0.7"></rect>
+  <rect x="65" y="60" width="2" height="16" rx="0.5" fill="white" opacity="0.7"></rect>
+  <rect x="69" y="60" width="1" height="16" rx="0.5" fill="white" opacity="0.7"></rect>
+</svg>

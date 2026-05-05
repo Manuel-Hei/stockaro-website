@@ -1,0 +1,263 @@
+/* =============================================================
+   STOCKARO DESIGN SYSTEM — colors_and_type.css
+   Brand: Stockaro Deep Green (#0F6E56)
+   Default mode: LIGHT
+   Font: DM Sans (substitute for Circular) + Source Code Pro
+   ============================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Source+Code+Pro:wght@400;500&display=swap');
+/* Geist = Headlines/Display · Inter = Body/UI · Source Code Pro = Monospace */
+
+/* -------------------------------------------------------------
+   BRAND PALETTE
+   ------------------------------------------------------------- */
+:root {
+  /* ── Primary: Stockaro Deep Green — 12-step ─────────────── */
+  --green-1:  #f0faf6;
+  --green-2:  #ddf5ec;
+  --green-3:  #c0eddf;
+  --green-4:  #9ae3cf;
+  --green-5:  #6fd4ba;
+  --green-6:  #3ebf9f;
+  --green-7:  #0f6e56;   /* ★ PRIMARY                          */
+  --green-8:  #0c5c47;
+  --green-9:  #0a4d3c;
+  --green-10: #083d2f;
+  --green-11: #062e23;
+  --green-12: #041e17;
+
+  /* ── Secondary: Warm Stone — 6-step ────────────────────── */
+  --stone-1:  #faf8f5;
+  --stone-2:  #f2ede6;
+  --stone-3:  #e3d9cc;
+  --stone-4:  #c4b5a2;
+  --stone-5:  #9c8468;   /* ★ SECONDARY                        */
+  --stone-6:  #6b5641;
+
+  /* ── Accent: Warm Amber — 6-step ───────────────────────── */
+  --amber-1:  #fffbf0;
+  --amber-2:  #fef3d0;
+  --amber-3:  #fce49e;
+  --amber-4:  #f8cc62;
+  --amber-5:  #d4921a;   /* ★ ACCENT                           */
+  --amber-6:  #9a6610;
+}
+
+/* -------------------------------------------------------------
+   LIGHT MODE (default)
+   ------------------------------------------------------------- */
+:root, [data-theme="light"] {
+  /* Backgrounds */
+  --color-bg:               #f8f6f3;   /* Warm white page canvas   */
+  --color-bg-surface:       #ffffff;   /* Card / panel surface     */
+  --color-bg-elevated:      #efecea;   /* Lifted surface           */
+  --color-bg-sunken:        #e8e3dc;   /* Input / code bg          */
+
+  /* Borders */
+  --color-border-subtle:    #ece7e0;   /* Hairline dividers        */
+  --color-border:           #d8d0c6;   /* Default border           */
+  --color-border-strong:    #c4bab0;   /* Emphasis border          */
+
+  /* Foregrounds */
+  --color-fg-primary:       #1c1916;   /* Warm near-black          */
+  --color-fg-secondary:     #52493f;   /* Warm dark gray           */
+  --color-fg-muted:         #8c8278;   /* Muted warm gray          */
+  --color-fg-disabled:      #b8b0a6;   /* Disabled                 */
+  --color-fg-inverse:       #f8f6f3;   /* Text on dark surfaces    */
+
+  /* Brand */
+  --color-green:            var(--green-7);
+  --color-green-link:       var(--green-8);
+  --color-green-hover:      var(--green-9);
+  --color-green-border:     rgba(15, 110, 86, 0.22);
+  --color-green-subtle:     rgba(15, 110, 86, 0.08);
+
+  /* Secondary / Accent */
+  --color-secondary:        var(--stone-5);
+  --color-secondary-muted:  var(--stone-4);
+  --color-accent:           var(--amber-5);
+  --color-accent-muted:     var(--amber-4);
+
+  /* Semantic */
+  --color-success:          var(--green-7);
+  --color-success-bg:       var(--green-1);
+  --color-warning:          var(--amber-5);
+  --color-warning-bg:       var(--amber-1);
+  --color-error:            #c0392b;
+  --color-error-bg:         #fff5f5;
+  --color-info:             #2563eb;
+  --color-info-bg:          #eff6ff;
+
+  /* Shadows (light mode uses real shadows) */
+  --shadow-sm:              0 1px 2px rgba(28, 25, 22, 0.06);
+  --shadow-md:              0 4px 12px rgba(28, 25, 22, 0.10);
+  --shadow-lg:              0 8px 24px rgba(28, 25, 22, 0.14);
+  --shadow-focus:           0 0 0 3px rgba(15, 110, 86, 0.20);
+}
+
+/* -------------------------------------------------------------
+   DARK MODE
+   ------------------------------------------------------------- */
+[data-theme="dark"] {
+  --color-bg:               #0b1e17;
+  --color-bg-surface:       #0e2720;
+  --color-bg-elevated:      #071510;
+  --color-bg-sunken:        #071510;
+
+  --color-border-subtle:    #0e2720;
+  --color-border:           #0f3229;
+  --color-border-strong:    #0f3e32;
+
+  --color-fg-primary:       #bdf5e8;
+  --color-fg-secondary:     #6de4c4;
+  --color-fg-muted:         #3ebf9f;
+  --color-fg-disabled:      #0e4f3f;
+  --color-fg-inverse:       #071510;
+
+  --color-green:            var(--green-6);
+  --color-green-link:       var(--green-5);
+  --color-green-hover:      var(--green-4);
+  --color-green-border:     rgba(62, 191, 159, 0.30);
+  --color-green-subtle:     rgba(62, 191, 159, 0.10);
+
+  --color-secondary:        var(--stone-4);
+  --color-secondary-muted:  var(--stone-3);
+  --color-accent:           var(--amber-4);
+  --color-accent-muted:     var(--amber-3);
+
+  --color-success:          var(--green-5);
+  --color-success-bg:       rgba(110,228,196,0.10);
+  --color-warning:          var(--amber-4);
+  --color-warning-bg:       rgba(248,204,98,0.10);
+  --color-error:            #f87171;
+  --color-error-bg:         rgba(248,113,113,0.10);
+  --color-info:             #60a5fa;
+  --color-info-bg:          rgba(96,165,250,0.10);
+
+  --shadow-sm:              0 1px 2px rgba(0,0,0,0.30);
+  --shadow-md:              0 4px 12px rgba(0,0,0,0.40);
+  --shadow-lg:              0 8px 24px rgba(0,0,0,0.50);
+  --shadow-focus:           0 0 0 3px rgba(62,191,159,0.30);
+}
+
+/* -------------------------------------------------------------
+   BORDER RADIUS
+   ------------------------------------------------------------- */
+:root {
+  --radius-sm:    4px;
+  --radius-md:    8px;
+  --radius-lg:    12px;
+  --radius-xl:    16px;
+  --radius-2xl:   24px;
+  --radius-pill:  9999px;
+}
+
+/* -------------------------------------------------------------
+   SPACING (8px base unit)
+   ------------------------------------------------------------- */
+:root {
+  --space-1:    4px;
+  --space-2:    8px;
+  --space-3:    12px;
+  --space-4:    16px;
+  --space-5:    20px;
+  --space-6:    24px;
+  --space-8:    32px;
+  --space-10:   40px;
+  --space-12:   48px;
+  --space-16:   64px;
+  --space-20:   80px;
+  --space-24:   96px;
+  --space-32:   128px;
+}
+
+/* -------------------------------------------------------------
+   TYPOGRAPHY
+   ------------------------------------------------------------- */
+:root {
+  --font-sans:  'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-display: 'Geist', 'Inter', sans-serif;
+  --font-mono:  'Source Code Pro', 'Menlo', monospace;
+
+  /* Scale */
+  --text-xs:    0.75rem;    /* 12px */
+  --text-sm:    0.875rem;   /* 14px */
+  --text-base:  1rem;       /* 16px */
+  --text-lg:    1.125rem;   /* 18px */
+  --text-xl:    1.5rem;     /* 24px */
+  --text-2xl:   2.25rem;    /* 36px */
+  --text-3xl:   3rem;       /* 48px */
+  --text-hero:  4.5rem;     /* 72px */
+
+  /* Leading */
+  --leading-none:   1.00;
+  --leading-tight:  1.20;
+  --leading-snug:   1.33;
+  --leading-normal: 1.50;
+  --leading-relaxed:1.60;
+
+  /* Tracking */
+  --tracking-tight:  -0.02em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.04em;
+  --tracking-widest:  0.08em;
+}
+
+/* -------------------------------------------------------------
+   SEMANTIC ELEMENT DEFAULTS
+   ------------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family:    var(--font-sans);
+  font-size:      var(--text-base);
+  font-weight:    400;
+  line-height:    var(--leading-normal);
+  color:          var(--color-fg-primary);
+  background:     var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+h1 { font-size: var(--text-hero);  font-weight: 600; line-height: var(--leading-none);  letter-spacing: var(--tracking-tight); }
+h2 { font-size: var(--text-2xl);   font-weight: 600; line-height: var(--leading-tight); }
+h3 { font-size: var(--text-xl);    font-weight: 500; line-height: var(--leading-snug);  letter-spacing: -0.01em; }
+h4 { font-size: var(--text-lg);    font-weight: 500; line-height: var(--leading-snug);  }
+p  { font-size: var(--text-base);  font-weight: 400; line-height: var(--leading-normal); color: var(--color-fg-secondary); }
+
+a  { color: var(--color-green-link); text-decoration: none; transition: color 150ms ease-out; }
+a:hover { color: var(--color-green-hover); }
+
+code, kbd {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-fg-muted);
+  background: var(--color-bg-sunken);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+}
+
+/* -------------------------------------------------------------
+   UTILITY CLASSES
+   ------------------------------------------------------------- */
+.text-hero    { font-size: var(--text-hero);  line-height: var(--leading-none);   font-weight: 400; letter-spacing: var(--tracking-tight); }
+.text-section { font-size: var(--text-2xl);   line-height: var(--leading-tight);  font-weight: 400; }
+.text-card    { font-size: var(--text-xl);    line-height: var(--leading-snug);   font-weight: 400; letter-spacing: -0.01em; }
+.text-sub     { font-size: var(--text-lg);    line-height: var(--leading-relaxed);font-weight: 400; }
+.text-body    { font-size: var(--text-base);  line-height: var(--leading-normal); font-weight: 400; }
+.text-nav     { font-size: var(--text-sm);    line-height: 1.43;                  font-weight: 500; }
+.text-btn     { font-size: var(--text-sm);    line-height: 1.14;                  font-weight: 500; }
+.text-caption { font-size: var(--text-sm);    line-height: 1.43;                  font-weight: 400; }
+.text-small   { font-size: var(--text-xs);    line-height: var(--leading-snug);   font-weight: 400; }
+.text-code    { font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: var(--tracking-widest); text-transform: uppercase; }
+
+.fg-primary   { color: var(--color-fg-primary); }
+.fg-secondary { color: var(--color-fg-secondary); }
+.fg-muted     { color: var(--color-fg-muted); }
+.fg-accent    { color: var(--color-green); }
